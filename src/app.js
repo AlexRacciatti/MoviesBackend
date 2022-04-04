@@ -44,4 +44,6 @@ app.use('/api/genres',apiGenresRouter);
 
 
 //Activando el servidor desde express
-app.listen('3031', () => console.log('Servidor corriendo en el puerto 3031'));
+const port = process.env.PORT || 8000;
+
+app.listen(port, () => console.log( `Servidor corriendo en el puerto ${port}` ));
