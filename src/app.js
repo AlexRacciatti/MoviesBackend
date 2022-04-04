@@ -34,6 +34,7 @@ const apiGenresRouter = require('./routes/api/genres')
 //Aquí llamo a la ruta de las api de actors
 const apiActorsRouter = require('./routes/api/actors')
 
+require('dotenv').config();
 
 app.use(express.static(path.resolve(__dirname, '../public')));
 

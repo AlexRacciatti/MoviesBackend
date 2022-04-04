@@ -1,9 +1,9 @@
 module.exports = {
   "development": {
-    "username": "moviesapi",
-    "password": 'alwaysdata2605',
-    "database": "moviesapi_db",
-    "host": "mysql-moviesapi.alwaysdata.net",
+    "username": process.env.USERNAME,
+    "password": process.env.PASSWORD,
+    "database": process.env.DATABASE,
+    "host": process.env.HOST,
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +14,10 @@ module.exports = {
     // "dialect": "mysql"
   },
   "production": {
-    "username": "moviesapi",
-    "password": 'alwaysdata2605',
-    "database": "moviesapi_db",
-    "host": "mysql-moviesapi.alwaysdata.net",
+    "username": process.env.USERNAME,
+    "password": process.env.PASSWORD,
+    "database": process.env.DATABASE,
+    "host": process.env.HOST,
     "dialect": "mysql"
   }
 }
